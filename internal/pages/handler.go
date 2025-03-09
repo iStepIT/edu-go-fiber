@@ -1,14 +1,19 @@
 package pages
 
-import "github.com/gofiber/fiber/v2"
+import (
+	"github.com/gofiber/fiber/v2"
+	"log/slog"
+)
 
 type PagesHandler struct {
-	router fiber.Router
+	router     fiber.Router
+	slogLogger *slog.Logger
 }
 
-func NewPagesHandler(router fiber.Router) {
+func NewPagesHandler(router fiber.Router, slogLogger *slog.Logger) {
 	h := &PagesHandler{
-		router: router,
+		router:     router,
+		slogLogger: slogLogger,
 	}
 	api := h.router.Group("/api")
 

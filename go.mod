@@ -3,9 +3,11 @@ module edu-go-fiber
 go 1.24
 
 require (
+	github.com/gofiber/contrib/fiberzerolog v1.0.2
 	github.com/gofiber/fiber/v2 v2.52.6
 	github.com/joho/godotenv v1.5.1
-
+	github.com/rs/zerolog v1.33.0
+	github.com/samber/slog-fiber v1.17.2
 )
 
 require (
@@ -20,5 +22,7 @@ require (
 	github.com/valyala/bytebufferpool v1.0.0 // indirect
 	github.com/valyala/fasthttp v1.59.0 // indirect
 	github.com/valyala/tcplisten v1.0.0 // indirect
+	go.opentelemetry.io/otel v1.29.0 // indirect
+	go.opentelemetry.io/otel/trace v1.29.0 // indirect
 	golang.org/x/sys v0.31.0 // indirect
 )
