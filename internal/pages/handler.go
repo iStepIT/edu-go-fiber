@@ -12,7 +12,7 @@ func NewPagesHandler(router fiber.Router) {
 	}
 	api := h.router.Group("/api")
 
-	api.Get("/", h.homePage)
+	api.Get("/home", h.homePage)
 }
 
 func (h *PagesHandler) homePage(c *fiber.Ctx) error {
