@@ -12,13 +12,9 @@ func NewHandler(router fiber.Router) {
 	}
 	api := h.router.Group("/api")
 
-	api.Get("/error", h.error)
+	api.Get("/error", h.home)
 }
 
 func (h *HomeHandler) home(c *fiber.Ctx) error {
-	return c.SendString("Hello, World!")
-}
-
-func (h *HomeHandler) error(c *fiber.Ctx) error {
-	return fiber.NewError(fiber.StatusInternalServerError, "something went wrong")
+	return c.SendString("Error")
 }
