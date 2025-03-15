@@ -1,11 +1,16 @@
 package config
 
 import (
-	"github.com/joho/godotenv"
 	"log"
 	"os"
 	"strconv"
+
+	"github.com/joho/godotenv"
 )
+
+type DatabaseConfig struct {
+	Url string
+}
 
 func Init() {
 	if err := godotenv.Load(); err != nil {
@@ -41,14 +46,10 @@ func getBool(key string, defaultValue bool) bool {
 	return i
 }
 
-type DatabaseConfig struct {
-	url string
-}
-
 // Default
 
 func NewDatabaseConfig() *DatabaseConfig {
 	return &DatabaseConfig{
-		url: getString("DATABASE_URL", ""),
+		Url: getString("DATABASE_URL", ""),
 	}
 }
