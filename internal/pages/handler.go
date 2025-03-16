@@ -1,8 +1,9 @@
 package pages
 
 import (
-	"github.com/gofiber/fiber/v2"
 	"log/slog"
+
+	"github.com/gofiber/fiber/v2"
 )
 
 type PagesHandler struct {

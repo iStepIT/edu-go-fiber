@@ -1,6 +1,9 @@
 package home
 
 import (
+	"edu-go-fiber/pkg/tadapter"
+	"edu-go-fiber/views"
+
 	"github.com/gofiber/fiber/v2"
 	"github.com/rs/zerolog"
 )
@@ -20,21 +23,21 @@ func NewHandler(router fiber.Router, customLogger *zerolog.Logger) {
 		router:       router,
 		customLogger: customLogger,
 	}
-	api := h.router.Group("/api")
-
-	api.Get("/test", h.test)
+	h.router.Get("/test", h.home)
+	h.router.Get("/404", h.error)
 }
 
-func (h *HomeHandler) test(c *fiber.Ctx) error {
-	users := []User{
-		{Id: 1, Name: "John"},
-		{Id: 2, Name: "Jack"},
-		{Id: 3, Name: "Smith"},
-	}
-	names := []string{"Tom", "Jack", "Smith"}
-	data := struct {
-		Names []string
-		Users []User
-	}{names, users}
-	return c.Render("page", data)
+func (h *HomeHandler) home(c *fiber.Ctx) error {
+	component := views.Main()
+	return tadapter.Render(c, component)
+}
+
+func (h *HomeHandler) error(c *fiber.Ctx) error {
+	h.customLogger.Info().
+		Bool("isAdmin", true).
+		Str("username", "admin").
+		Int("userId", 123).
+		Msg("user not found")
+
+	return c.SendString("user not found")
 }

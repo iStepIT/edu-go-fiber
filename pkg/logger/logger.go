@@ -2,8 +2,9 @@ package logger
 
 import (
 	"edu-go-fiber/config"
-	"github.com/rs/zerolog"
 	"os"
+
+	"github.com/rs/zerolog"
 )
 
 func NewLogger(config *config.LogConfig) *zerolog.Logger {

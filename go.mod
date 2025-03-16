@@ -8,11 +8,12 @@ require (
 	github.com/gofiber/template/html/v2 v2.1.3
 	github.com/joho/godotenv v1.5.1
 	github.com/rs/zerolog v1.33.0
-	github.com/samber/slog-fiber v1.17.2
+	github.com/samber/slog-fiber v1.18.0
 )
 
 require (
 	dario.cat/mergo v1.0.1 // indirect
+	github.com/a-h/templ v0.3.833
 	github.com/air-verse/air v1.61.7 // indirect
 	github.com/andybalholm/brotli v1.1.1 // indirect
 	github.com/bep/godartsass v1.2.0 // indirect
