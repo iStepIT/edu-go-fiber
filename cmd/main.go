@@ -5,12 +5,13 @@ import (
 	"edu-go-fiber/internal/home"
 	"edu-go-fiber/internal/pages"
 	"edu-go-fiber/pkg/logger"
+	"log/slog"
+	"os"
+
 	"github.com/gofiber/contrib/fiberzerolog"
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/recover"
 	slogfiber "github.com/samber/slog-fiber"
-	"log/slog"
-	"os"
 )
 
 func main() {
@@ -26,8 +27,10 @@ func main() {
 		Logger: customLogger,
 	}))
 	app.Use(recover.New())
+	app.Static("/public", "./public")
 
 	pages.NewPagesHandler(app, slogLogger)
+
 	home.NewHandler(app, customLogger)
 
 	app.Listen(":3000")

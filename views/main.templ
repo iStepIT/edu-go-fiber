@@ -4,11 +4,17 @@ import "edu-go-fiber/views/components"
 import "edu-go-fiber/views/layout"
 
 templ Main () {
-    <main>
+    @layout.Layout (layout.LayoutProps{
+        Title: "Найди работу",
+        MetaDescription: "~сайтт по поиску работы",
+    })  {
+         <main>
     @layout.Header() {
         @components.Title("найди работу мечты")
+        @components.SubTitle("простой поиск работы")
     }
     Main
     </main>
+    }
 }
 
