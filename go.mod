@@ -13,6 +13,11 @@ require (
 )
 
 require (
+	github.com/gofrs/uuid v4.4.0+incompatible // indirect
+	github.com/serenize/snaker v0.0.0-20201027110005-a7ad2135616e // indirect
+)
+
+require (
 	dario.cat/mergo v1.0.1 // indirect
 	github.com/PuerkitoBio/goquery v1.10.2 // indirect
 	github.com/a-h/parse v0.0.0-20250122154542-74294addb73e // indirect
@@ -27,6 +32,7 @@ require (
 	github.com/creack/pty v1.1.23 // indirect
 	github.com/fatih/color v1.18.0 // indirect
 	github.com/fsnotify/fsnotify v1.8.0 // indirect
+	github.com/gobuffalo/validate v2.0.4+incompatible
 	github.com/gobwas/glob v0.2.3 // indirect
 	github.com/gofiber/fiber v1.14.6 // indirect
 	github.com/gofiber/template v1.8.3 // indirect

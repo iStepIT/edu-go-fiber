@@ -23,7 +23,7 @@ func NewHandler(router fiber.Router, customLogger *zerolog.Logger) {
 		router:       router,
 		customLogger: customLogger,
 	}
-	h.router.Get("/test", h.home)
+	h.router.Get("/", h.home)
 	h.router.Get("/404", h.error)
 }
 
