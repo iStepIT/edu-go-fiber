@@ -4,70 +4,43 @@ go 1.24
 
 require (
 	github.com/a-h/templ v0.3.833
-	github.com/air-verse/air v1.61.7
 	github.com/gofiber/contrib/fiberzerolog v1.0.2
 	github.com/gofiber/fiber/v2 v2.52.6
+	github.com/jackc/pgx/v5 v5.7.2
 	github.com/joho/godotenv v1.5.1
 	github.com/rs/zerolog v1.33.0
-	github.com/samber/slog-fiber v1.18.0
+	github.com/rvflash/elapsed v0.4.1
 )
 
 require (
 	github.com/gofrs/uuid v4.4.0+incompatible // indirect
+	github.com/google/go-cmp v0.7.0 // indirect
 	github.com/jackc/pgpassfile v1.0.0 // indirect
 	github.com/jackc/pgservicefile v0.0.0-20240606120523-5a60cdf6a761 // indirect
-	github.com/jackc/pgx/v5 v5.7.2 // indirect
 	github.com/jackc/puddle/v2 v2.2.2 // indirect
-	github.com/rvflash/elapsed v0.4.1 // indirect
+	github.com/onsi/ginkgo v1.16.5 // indirect
+	github.com/onsi/gomega v1.36.2 // indirect
 	github.com/serenize/snaker v0.0.0-20201027110005-a7ad2135616e // indirect
+	github.com/stretchr/testify v1.10.0 // indirect
 	golang.org/x/crypto v0.36.0 // indirect
 )
 
 require (
-	dario.cat/mergo v1.0.1 // indirect
-	github.com/PuerkitoBio/goquery v1.10.2 // indirect
-	github.com/a-h/parse v0.0.0-20250122154542-74294addb73e // indirect
 	github.com/andybalholm/brotli v1.1.1 // indirect
-	github.com/andybalholm/cascadia v1.3.3 // indirect
-	github.com/bep/godartsass v1.2.0 // indirect
-	github.com/bep/godartsass/v2 v2.1.0 // indirect
-	github.com/bep/golibsass v1.2.0 // indirect
-	github.com/cenkalti/backoff/v4 v4.3.0 // indirect
-	github.com/cli/browser v1.3.0 // indirect
-	github.com/cli/safeexec v1.0.1 // indirect
-	github.com/creack/pty v1.1.23 // indirect
-	github.com/fatih/color v1.18.0 // indirect
 	github.com/fsnotify/fsnotify v1.8.0 // indirect
 	github.com/gobuffalo/validate v2.0.4+incompatible
-	github.com/gobwas/glob v0.2.3 // indirect
-	github.com/gofiber/fiber v1.14.6 // indirect
 	github.com/gofiber/storage/postgres/v3 v3.1.0
-	github.com/gofiber/template v1.8.3 // indirect
-	github.com/gofiber/utils v1.1.0 // indirect
-	github.com/gohugoio/hugo v0.134.3 // indirect
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/klauspost/compress v1.18.0 // indirect
 	github.com/mattn/go-colorable v0.1.14 // indirect
 	github.com/mattn/go-isatty v0.0.20 // indirect
 	github.com/mattn/go-runewidth v0.0.16 // indirect
-	github.com/natefinch/atomic v1.0.1 // indirect
-	github.com/pelletier/go-toml v1.9.5 // indirect
-	github.com/pelletier/go-toml/v2 v2.2.3 // indirect
 	github.com/rivo/uniseg v0.4.7 // indirect
 	github.com/sabloger/sitemap-generator v1.3.0
-	github.com/spf13/afero v1.11.0 // indirect
-	github.com/spf13/cast v1.7.0 // indirect
-	github.com/tdewolff/parse/v2 v2.7.15 // indirect
 	github.com/valyala/bytebufferpool v1.0.0 // indirect
 	github.com/valyala/fasthttp v1.59.0 // indirect
-	github.com/valyala/tcplisten v1.0.0 // indirect
-	go.opentelemetry.io/otel v1.35.0 // indirect
-	go.opentelemetry.io/otel/trace v1.35.0 // indirect
-	golang.org/x/mod v0.24.0 // indirect
 	golang.org/x/net v0.37.0 // indirect
 	golang.org/x/sync v0.12.0 // indirect
 	golang.org/x/sys v0.31.0 // indirect
 	golang.org/x/text v0.23.0 // indirect
-	golang.org/x/tools v0.31.0 // indirect
-	google.golang.org/protobuf v1.34.2 // indirect
 )
