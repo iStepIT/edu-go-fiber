@@ -10,16 +10,16 @@ import (
 
 func Init() {
 	if err := godotenv.Load(); err != nil {
-		log.Println("Error loading .env file")
+		log.Println("No .env file")
 		return
 	}
-	log.Println("Loading .env file")
+	log.Println(".env file loaded")
 }
 
 func getString(key, defaultValue string) string {
 	value := os.Getenv(key)
 	if value == "" {
-		value = defaultValue
+		return defaultValue
 	}
 	return value
 }
@@ -35,18 +35,16 @@ func getInt(key string, defaultValue int) int {
 
 func getBool(key string, defaultValue bool) bool {
 	value := os.Getenv(key)
-	i, err := strconv.ParseBool(value)
+	b, err := strconv.ParseBool(value)
 	if err != nil {
 		return defaultValue
 	}
-	return i
+	return b
 }
 
 type DatabaseConfig struct {
 	Url string
 }
-
-// Default
 
 func NewDatabaseConfig() *DatabaseConfig {
 	return &DatabaseConfig{

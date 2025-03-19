@@ -56,6 +56,8 @@ github.com/gofiber/fiber v1.14.6 h1:QRUPvPmr8ijQuGo1MgupHBn8E+wW0IKqiOvIZPtV70o=
 github.com/gofiber/fiber v1.14.6/go.mod h1:Yw2ekF1YDPreO9V6TMYjynu94xRxZBdaa8X5HhHsjCM=
 github.com/gofiber/fiber/v2 v2.52.6 h1:Rfp+ILPiYSvvVuIPvxrBns+HJp8qGLDnLJawAu27XVI=
 github.com/gofiber/fiber/v2 v2.52.6/go.mod h1:YEcBbO/FB+5M1IZNBP9FO3J9281zgPAreiI1oqg8nDw=
+github.com/gofiber/storage/postgres/v3 v3.1.0 h1:O0XUXeyD+JXTt4TwEmi0jrt8C/H3sDqQ5GmLiPZ5R8Y=
+github.com/gofiber/storage/postgres/v3 v3.1.0/go.mod h1:KFwT7zrv8rVdwjPe4yIpAFUwO3SYk9CkO1XZ0lK3gNM=
 github.com/gofiber/template v1.8.3 h1:hzHdvMwMo/T2kouz2pPCA0zGiLCeMnoGsQZBTSYgZxc=
 github.com/gofiber/template v1.8.3/go.mod h1:bs/2n0pSNPOkRa5VJ8zTIvedcI/lEYxzV3+YPXdBvq8=
 github.com/gofiber/template/html/v2 v2.1.3 h1:n1LYBtmr9C0V/k/3qBblXyMxV5B0o/gpb6dFLp8ea+o=
@@ -136,6 +138,10 @@ github.com/rogpeppe/go-internal v1.6.1/go.mod h1:xXDCJY+GAPziupqXw64V24skbSoqbTE
 github.com/rs/xid v1.5.0/go.mod h1:trrq9SKmegXys3aeAKXMUTdJsYXVwGY3RLcfgqegfbg=
 github.com/rs/zerolog v1.33.0 h1:1cU2KZkvPxNyfgEmhHAz/1A9Bz+llsdYzklWFzgp0r8=
 github.com/rs/zerolog v1.33.0/go.mod h1:/7mN4D5sKwJLZQ2b/znpjC3/GQWY/xaDXUM0kKWRHss=
+github.com/rvflash/elapsed v0.4.1 h1:YmcK2d04jbWimvl2j2H30Qw3BmKoA91oKowgJqQyo0w=
+github.com/rvflash/elapsed v0.4.1/go.mod h1:rYtxKq38KsM0qt+AW4FZGpAntXq3isLPot1eYSLRvqY=
+github.com/sabloger/sitemap-generator v1.3.0 h1:R8tGnxgxXvZOObL310mgv1ahSiDuaPQmYvlAv6sK4ZM=
+github.com/sabloger/sitemap-generator v1.3.0/go.mod h1:/Qk4vakEIlNrkhGhbLOCDTxs2yseQdQyuI9yJsp1Vs0=
 github.com/samber/slog-fiber v1.17.2 h1:dnVxF+e9PV85kx85o5jdCS1dyIIPcpvNO4Y4aRHnpbM=
 github.com/samber/slog-fiber v1.17.2/go.mod h1:dX+ZILMKbw0kN5AcUokMLJjsXyr/XRCQCTb/h8TV8Go=
 github.com/samber/slog-fiber v1.18.0 h1:SpqAiKcAK1LNv0YHuE9Qe+CwSWAJ9dicBJXT876K/jo=
@@ -149,6 +155,7 @@ github.com/spf13/cast v1.7.0/go.mod h1:ancEpBxwJDODSW/UG4rDrAqiKolqNNh2DX3mk86cA
 github.com/stretchr/objx v0.1.0/go.mod h1:HFkY916IF+rwdDfMAkV7OtwuqBVzrE8GR6GFx+wExME=
 github.com/stretchr/testify v1.3.0/go.mod h1:M5WIy9Dh21IEIfnGCwXGc5bZfKNJtfHm1UVUgZn+9EI=
 github.com/stretchr/testify v1.7.0/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/h/Wwjteg=
+github.com/stretchr/testify v1.7.1/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/h/Wwjteg=
 github.com/tdewolff/parse/v2 v2.7.15 h1:hysDXtdGZIRF5UZXwpfn3ZWRbm+ru4l53/ajBRGpCTw=
 github.com/tdewolff/parse/v2 v2.7.15/go.mod h1:3FbJWZp3XT9OWVN3Hmfp0p/a08v4h8J9W1aghka0soA=
 github.com/tdewolff/test v1.0.11-0.20231101010635-f1265d231d52/go.mod h1:6DAvZliBAAnD7rhVgwaM7DE5/d9NMOAJ09SqYqeK4QE=

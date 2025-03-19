@@ -3,7 +3,7 @@ package views
 import "edu-go-fiber/views/components"
 import "edu-go-fiber/views/layout"
 import "edu-go-fiber/views/widgets"
-import "edu-go-fiber/internal/widgets"
+import "edu-go-fiber/internal/vacancy"
 
 templ Main(vacancies []vacancy.Vacancy, pagesCount, page int) {
 	@layout.Layout(layout.LayoutProps{

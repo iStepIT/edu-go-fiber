@@ -18,6 +18,7 @@ require (
 	github.com/jackc/pgservicefile v0.0.0-20240606120523-5a60cdf6a761 // indirect
 	github.com/jackc/pgx/v5 v5.7.2 // indirect
 	github.com/jackc/puddle/v2 v2.2.2 // indirect
+	github.com/rvflash/elapsed v0.4.1 // indirect
 	github.com/serenize/snaker v0.0.0-20201027110005-a7ad2135616e // indirect
 	golang.org/x/crypto v0.36.0 // indirect
 )
@@ -40,6 +41,7 @@ require (
 	github.com/gobuffalo/validate v2.0.4+incompatible
 	github.com/gobwas/glob v0.2.3 // indirect
 	github.com/gofiber/fiber v1.14.6 // indirect
+	github.com/gofiber/storage/postgres/v3 v3.1.0
 	github.com/gofiber/template v1.8.3 // indirect
 	github.com/gofiber/utils v1.1.0 // indirect
 	github.com/gohugoio/hugo v0.134.3 // indirect
@@ -52,6 +54,7 @@ require (
 	github.com/pelletier/go-toml v1.9.5 // indirect
 	github.com/pelletier/go-toml/v2 v2.2.3 // indirect
 	github.com/rivo/uniseg v0.4.7 // indirect
+	github.com/sabloger/sitemap-generator v1.3.0
 	github.com/spf13/afero v1.11.0 // indirect
 	github.com/spf13/cast v1.7.0 // indirect
 	github.com/tdewolff/parse/v2 v2.7.15 // indirect

@@ -40,7 +40,7 @@ func Title(title string) templ.Component {
 		var templ_7745c5c3_Var2 string
 		templ_7745c5c3_Var2, templ_7745c5c3_Err = templ.JoinStringErrs(title)
 		if templ_7745c5c3_Err != nil {
-			return templ.Error{Err: templ_7745c5c3_Err, FileName: `views/components/title.templ`, Line: 5, Col: 32}
+			return templ.Error{Err: templ_7745c5c3_Err, FileName: `views/components/title.templ`, Line: 5, Col: 25}
 		}
 		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString(templ.EscapeString(templ_7745c5c3_Var2))
 		if templ_7745c5c3_Err != nil {
@@ -75,7 +75,7 @@ func TitleStyle() templ.Component {
 			templ_7745c5c3_Var3 = templ.NopComponent
 		}
 		ctx = templ.ClearChildren(ctx)
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 3, "<style>\n        .title {\n                font-weight: bold;\n                margin-bottom: 12px;\n                margin-top: 0;\n                color: var(--color-white);\n                font-size: 70px;\n        }\n    </style>")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 3, "<style>\n\t\t.title {\n\t\t\tfont-weight: bold;\n\t\t\tmargin-bottom: 12px;\n\t\t\tmargin-top: 0;\n\t\t\tcolor: var(--color-white);\n\t\t\tfont-size: 70px;\n\t\t}\n\t</style>")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
