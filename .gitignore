@@ -24,7 +24,7 @@ go.work.sum
 /temp
 /.vscode
 
-# env file
+/postgres-data
 .env
 
 .DS_Store

@@ -4,6 +4,7 @@ import (
 	"edu-go-fiber/config"
 	"edu-go-fiber/internal/home"
 	"edu-go-fiber/internal/pages"
+	"edu-go-fiber/pkg/database"
 	"edu-go-fiber/pkg/logger"
 	"log/slog"
 	"os"
@@ -18,6 +19,7 @@ func main() {
 	config.Init()
 	config.NewDatabaseConfig()
 	logConf := config.NewLogConfig()
+	dbConfig := config.NewDatabaseConfig()
 	customLogger := logger.NewLogger(logConf)
 	slogLogger := slog.New(slog.NewTextHandler(os.Stderr, nil))
 
@@ -28,6 +30,8 @@ func main() {
 	}))
 	app.Use(recover.New())
 	app.Static("/public", "./public")
+	dbpoll := database.CreateDbPool(dbConfig, customLogger)
+	defer dbpoll.Close()
 
 	pages.NewPagesHandler(app, slogLogger)
 
